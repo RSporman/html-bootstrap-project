@@ -17,80 +17,103 @@
         crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,800&display=swap"
         rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Taviraj:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
     <title>Document</title>
 </head>
-
-<style>
-    body {
-        background-image: url(https://www.itl.cat/pngfile/big/186-1861956_hd-scenic-wallpapers-and-photos-by-alia-marconi.jpg)
-    }
-
-    .nav-pills {
-        background-color: white
-    }
-
-    .name {
-        text-align: center;
-        color: whitesmoke;
-        font-family: 'Shadows Into Light', cursive;
-    }
-
-    .clearfix {
-        overflow: auto;
-    }
-
-    .avatar {
-        float: left;
-        margin-right: 30px;
-        margin-left: 30px;
-    }
-</style>
-
 <body>
-    <nav>
-    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-        <li class="nav-item" role="presentation" class="p-3 mb-2 bg-light text-dark">
-            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
-                aria-controls="pills-home" aria-selected="true">Home</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="portfolio.html" role="tab"
-                aria-controls="pills-profile" aria-selected="false">Portfolio</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="contact.html" role="tab"
-                aria-controls="pills-contact" aria-selected="false">Contact</a>
-        </li>
-    </ul>
-</nav>
-    <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-            <h1 class="name">
-                Bobby Sporman
-            </h1>
-            <section class="container">
-                <div class="clearfix">
-                    <img class="avatar" src="https://pickaface.net/gallery/avatar/lauraelizabetht555b3fe2b3345.png"
-                        alt="avatar">
-                    I have been an avid follower of technology over the past 30 years and have enjoyed keeping up with
-                    the
-                    lastest technology trends. There has been so much to learn as the technology world continues to
-                    evolve. When I landed my first job working as
-                    an
-                    IT sales represantitive, I was beyond thrilled. I have been in IT sales for over 6 years and enjoy
-                    getting my customers the latest and greatest product offerings.
-                    I decided to reinvent myself though. After completing a further education program at
-                    Rutgers
-                    for Full Stack Development, I am excited to enter the development workspace.
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Bobby Sporman</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                <a class="nav-item nav-link" href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <section class="container">
+            <img class="avatar" src="https://pickaface.net/gallery/avatar/lauraelizabetht555b3fe2b3345.png" alt="avatar"
+                width="300" height="300">
+        </section>
+        <br>
+        <div class="container text-center">
+            <p> I have been an avid follower of technology over the past 30 years and have enjoyed keeping up with
+                the
+                lastest technology trends. There has been so much to learn as the technology world continues to
+                evolve. When I landed my first job working as
+                an
+                IT sales represantitive, I was beyond thrilled. I have been in IT sales for over 6 years and enjoy
+                getting my customers the latest and greatest product offerings.
+                I decided to reinvent myself though. After completing a further education program at
+                Rutgers
+                for Full Stack Development, I am excited to enter the development workspace.
+            </p>
+        </div>
+    </header>
+
+   <section class="contact-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-3 h-100">
+                    <div class="card-body text-center">
+                        <h5 class="text-uppercase">Address</h5>
+                        <hr class="my-4">
+                        <div class="small text-black-50">1001 Madison Steet Hoboken,NJ 07030</div>
+                    </div>
                 </div>
-            </section>
-        </div>   
+            </div>
+​
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-3 h-100">
+                    <div class="card-body text-center">
+                        <h5 class="text-uppercase">Email</h5>
+                        <hr class="my-4">
+                        <div class="small text-black-50">
+                            <a href="#">bobby.sporman@yahoo.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+​
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-3 h-100">
+                    <div class="card-body text-center">
+                        <h5 class="text-uppercase">Phone</h5>
+                        <hr class="my-4">
+                        <div class="small text-black-50">+1 (908) 295-9856</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+   </section>  
+   <section class="social-container">
+    <a href="https://www.linkedin.com/in/bobby-sporman-06580914a/" class="fa fa-linkedin"></a>
+    
+    </section>
+   
+
+   <footer class="copyright">
+       <div class="container">
+           Copyright 2020 &copy; Bobby Sporman
+       </div>
+    
+   </footer>
+        
+
+
+
+
 </body>
-<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"></div>
-<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"></div>
-
-</div>
-
 
 
 
